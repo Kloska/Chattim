@@ -18,7 +18,7 @@ public class Model {
         try {
             serverSocket = new ServerSocket(port);
             while (true) {
-                System.out.println("Waiting for connections!");
+                System.out.println("Waiting for connections...");
                 socket = serverSocket.accept();
                 // Go
                 PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
